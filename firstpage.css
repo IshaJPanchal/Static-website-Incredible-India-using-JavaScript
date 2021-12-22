@@ -1,0 +1,125 @@
+#navbar{
+    /* border: 2px solid red; */
+    padding: 3px;
+    }
+#navbar::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 71px;
+    z-index: -1;
+    opacity: 1;
+} 
+#navbar ul{
+    /* border: 2px solid blue; */
+   width: -webkit-fill-available;
+   display: flex;  
+   justify-content: space-between;   
+   align-items: center;
+   }
+#logo{
+   width: 50px;
+   height: 50px;
+   /* border: 2px solid purple; */
+}
+#ou{
+     display: flex;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+}
+/* css 0of section  */
+#background{
+    /* border: 2px solid black; */
+    margin-top: 20px;
+}
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+/* #background::before{
+    background: url("/South-Indian-Bruschetta-Recipe.jpg")no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 427px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+} */
+.text{
+    height: 350px;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.text h1{
+    font-size: 65px;
+    color: rgb(59, 35, 35);
+    text-shadow: 2px 2px 5px gray;
+}
+.text p{
+    font-size: small;
+    color: rgb(59, 35, 35);
+    text-shadow: 2px 2px 5px gray;
+}
+.text {
+    display: flex;
+    flex-flow: row wrap;
+    z-index: 2;
+    opacity: 0;
+}
+.text:hover{
+    opacity: 1;
+}
+
+.info{
+    height: 500px;
+    width: 100%;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 7px;
+}
+.info p{
+    font-size: 28px;
+}
+.info h2{
+    margin-bottom: 3px;
+}
+.info a{
+    text-decoration: none;
+    display: block;
+    font-size: 23px;
+    color: rgb(12, 12, 78);
+    margin: 5px 2px;
+
+}
+@media (max-width:450px){
+    .text p{
+        font-size: 26px;
+    }
+}
+@media and (min-width:450px) and (max-width:640px) {
+    .text p{
+        font-size: 49px;
+    }
+}

@@ -1,0 +1,205 @@
+#navbar{
+    /* border: 2px solid red; */
+    padding: 3px;
+    }
+#navbar::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 71px;
+    z-index: -1;
+    opacity: 0.4;
+} 
+#navbar ul{
+    /* border: 2px solid blue; */
+   width: -webkit-fill-available;
+   display: flex;  
+   justify-content: space-between;   
+   align-items: center;
+   }
+#logo{
+   width: 50px;
+   height: 50px;
+   /* border: 2px solid purple; */
+}
+#ou{
+     display: flex;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+}
+ .motivation{
+     /* border: 2px solid red; */
+     margin-top: 5px;
+     height: 40%;
+     width: 100%;
+ }
+ .motivation::before{
+     background: url("/b6.jpg")no-repeat center center/cover;
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 450px;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.6;
+     /* this is the animation part  */
+     transition: 5s;
+     animation-name: bgchange;
+     animation-direction: alternate-reverse;
+     animation-duration: 40s;
+     animation-fill-mode: forwards;
+     animation-iteration-count: infinite;
+     animation-play-state: running;
+     animation-timing-function: ease-in-out;
+ }
+ @keyframes bgchange {
+     0%{
+        background: url("/white\ tiger.jpg")no-repeat center center/cover; 
+     }
+     20%{
+        background: url("/red\ panda.jpeg")no-repeat center center/cover; 
+     }
+     40%{
+        background: url("/peacock.jpg")no-repeat center center/cover; 
+     }
+     60%{
+        background: url("Cheeta.jpeg")no-repeat center center/cover; 
+     }
+     80%{
+        background: url("/national\ park.jpg")no-repeat center center/cover; 
+     }
+     100%{
+        background: url("indian\ tiger.jpg")no-repeat center center/cover; 
+     }
+ }
+ .head{
+    font-size: 70px;
+    margin: 5px;
+    text-align: center;
+    transition: 2s;
+     animation-name: tricolour;
+     animation-direction: alternate-reverse;
+     animation-duration: 10s;
+     animation-fill-mode: forwards;
+     animation-iteration-count: infinite;
+     animation-play-state: running;
+     animation-timing-function: ease-in-out;
+ }
+ @keyframes tricolour {
+     0%{
+        background: #ff4800; 
+        color: white;
+     }
+     50%{
+        background: white; 
+        color: navy;
+     }
+     100%{
+        background: green; 
+        color: white;
+     }
+     
+ }
+ .flex{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 390px;
+     width: 100%;
+ }
+ .quote{
+      margin: -8px;
+      padding: 0;
+     font-size: 63px;
+     text-shadow: 2px 2px 5px black;
+     color: white;
+ }
+ /* this is css of different items  */
+ .out{
+       /* border: 2px solid black; */
+       border-radius: 7px;
+       display: flex;
+       overflow-x: auto;
+       max-height: 300px;
+       background-color: #f8b170;
+    
+}
+.in{
+    border: 2px solid gray;
+    border-radius: 7px;
+    height: 200px;
+    min-width: 200px;
+    padding: 10px;
+    margin: 7px 5px;
+    background: url("/tri colour.jpg")no-repeat center center/cover;
+    
+}
+.logo{
+    height: 161px;
+    width: 189px;
+    margin: 7px 2px 2px 2px;
+}
+.in:hover  {
+    height: 280px;
+}
+.h1{
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.btn{
+    visibility: hidden;
+    opacity: 0;
+}
+.in:hover .h1 {
+    visibility: visible;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    opacity: 1;
+    margin-top: 3ox;
+    margin-bottom: 5px;
+    
+}
+.in:hover .btn {
+    visibility: visible;
+    opacity: 1;
+   padding: 20px 75px;
+    
+}
+@media (max-width: 500px){
+    .head{
+        font-size: 40px;
+    }
+}
+#m1{
+    background-color: #ff4800;
+    color: white;
+}
+#m2{
+    background-color: #ff4800;
+    color: white;
+}
+#m3{
+    background-color: white;
+    color: navy;
+}
+#m4{
+    background-color: green;
+    color: white;
+}
+#m5{
+    background-color: green;
+    color: white;
+}

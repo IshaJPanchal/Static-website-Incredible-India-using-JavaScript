@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #a664e3;
+        }
+        #navbar {
+            /* border: 2px solid red; */
+            padding: 3px;
+        }
+
+        #navbar::before {
+            background-color: black;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 71px;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar ul {
+            /* border: 2px solid blue; */
+            width: -webkit-fill-available;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            width: 50px;
+            height: 50px;
+            /* border: 2px solid purple; */
+        }
+
+        #ou {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: white;
+            text-shadow: 2px 2px 2px gray;
+            cursor: pointer;
+        }
+
+        .heading {
+            text-align: center;
+            margin-top: 30px;
+            color: white;
+        }
+        .out{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 200%;
+            text-align: center;
+        }
+        .in{
+            height: 135px;
+            width: 98%;
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 3px;
+    margin: 4px;
+    background-color: #f1f17a;
+        }
+        .in p{
+            margin-bottom: 0;
+            margin-top: px;
+        }
+        .in h3 a{
+            text-decoration: none;
+            color:blue;
+        }
+        @media (max-width: 300px){
+           .in{
+               height: 240px;
+           }
+        }
+        @media screen and (min-width: 300px) and (max-width: 500px){
+           .in{
+               height: 211px;
+           }
+        }
+        @media screen and (min-width: 500px) and (max-width: 900px){
+           .in{
+               height: 180px;
+           }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="ou">
+            <img src="" alt="logo here" id="logo">
+            <ul>
+                <li><a href="/homepage.html">Home</a></li>
+                <li><a href="/About.html">About</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <h1 class="heading">Explore The different Beauties of INDIA</h1>
+        <div class="out">
+            <div class="in">
+                <h3> <a href="https://holidayz.makemytrip.com/holidays/india/search?dest=Goa" target="_blank">Goa Trip - MakeMyTrip</a>  </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est reprehenderit dolores reiciendis
+                    excepturi, assumenda dolore sed at modi incidunt doloribus delectus quaerat dolorum recusandae
+                    laborum voluptatem consectetur illum dicta sit rem facilis. Id.</p>
+                    <p>Contact:+022-88465232074</p>
+            </div>
+            <div class="in">
+                <h3> <a href="https://holidayz.makemytrip.com/holidays/india/search?dest=Kerala" target="_blank">Kerela Trip - MakeMyTrip</a>  </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est reprehenderit dolores reiciendis
+                    excepturi, assumenda dolore sed at modi incidunt doloribus delectus quaerat dolorum recusandae
+                    laborum voluptatem consectetur illum dicta sit rem facilis. Id.</p>
+                    <p>Contact:+022-88465232074</p>
+            </div>
+            <div class="in">
+                <h3> <a href="https://holidayz.makemytrip.com/holidays/india/search?dest=Himachal" target="_blank">Himachal Pradesh Trip - MakeMyTrip</a>  </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est reprehenderit dolores reiciendis
+                    excepturi, assumenda dolore sed at modi incidunt doloribus delectus quaerat dolorum recusandae
+                    laborum voluptatem consectetur illum dicta sit rem facilis. Id.</p>
+                    <p>Contact:+022-88465232074</p>
+            </div>
+           
+        </div>
+    </section>
+</body>
+
+</html>
